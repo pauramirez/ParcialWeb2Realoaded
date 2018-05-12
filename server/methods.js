@@ -27,5 +27,15 @@ Meteor.methods({
             throw new Meteor.Error("not-authorized")
         }
         Comentarios.remove(comentario._id);
+    },
+
+    getGrafica() {
+        let response = new Promise((resolve, reject) => {
+            HTTP.call("GET","http://webservices.nextbus.com/service/publicJSONFeed?command=vehicleLocations&a=sf-muni&t=0", (err, response) => {
+                if (err) reject(err);
+                resolve(response);
+            });
+        });
+        return response;
     }
 });

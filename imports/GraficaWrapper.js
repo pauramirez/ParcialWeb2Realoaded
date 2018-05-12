@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-
-import "./api/NexBuses";
-
 import { Meteor } from "meteor/meteor";
 import { withTracker } from "meteor/react-meteor-data";
 import { Col, Navbar, Nav, NavItem } from "reactstrap";
