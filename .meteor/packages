@@ -24,3 +24,6 @@ stolinski:stylus-multi
 
 accounts-ui
 accounts-password
+accounts-google
+google-config-ui
+react-meteor-data

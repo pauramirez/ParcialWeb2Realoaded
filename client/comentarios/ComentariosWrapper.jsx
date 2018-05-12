@@ -31,7 +31,7 @@ export default class ComentariosWrapper extends TrackerReact(React.Component) {
     render() {
         let res = this.comentarios();
 
-        if (res.length < 1) {
+        if (res.length < 0) {
             return (<div>Loading </div>)
         }
 

@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 export default class ComentarioSingle extends Component {
 
     toggleChecked() {
-        Meteor.call("toggleComentario", this.props.comentario._id, this.props.comentario.complete);
+        Meteor.call("toggleComentario", this.props.comentario);
     }
 
     deleteComentario() {
-        Meteor.call("deleteComentario", this.props.comentario._id);
+        Meteor.call("deleteComentario", this.props.comentario);
     }
 
     render() {

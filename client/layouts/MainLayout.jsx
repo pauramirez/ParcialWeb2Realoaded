@@ -8,8 +8,8 @@ export const MainLayout = ({ content }) => (
             <h2> Next Bus Parcial </h2>
             <nav>
                 <a href="/"> Comentarios </a>
-                <a href="/"> Grafica </a>
-                <a href="/"> About </a>
+                <a href="/Grafica"> Grafica </a>
+                <a href="/About"> About </a>
                 <AccountsUI/>
             </nav>
         </header>
